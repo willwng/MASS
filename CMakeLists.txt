@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 2.8.6)
+cmake_minimum_required(VERSION 3.5)
 project(mss)
 if(NOT CMAKE_BUILD_TYPE)
   set(CMAKE_BUILD_TYPE "Release" CACHE STRING
@@ -8,7 +8,7 @@ RelWithDebInfo MinSizeRel."
 endif(NOT CMAKE_BUILD_TYPE)
 
 add_compile_options(-fPIC)
-add_compile_options(-std=gnu++11)
+add_compile_options(-std=gnu++14)
 add_compile_options(-Wdeprecated-declarations)
 
 add_compile_options(-DHAVE_CSTDDEF)
